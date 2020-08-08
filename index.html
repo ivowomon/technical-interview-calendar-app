@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+	<head>
+		<meta charset="utf-8">
+		<title>Calendar App</title>
+		<link rel="stylesheet" href="css/calendar.css">
+	</head>
+	<body>
+		<div class="app card">
+			<h1>Best calendar app ever!</h1>
+			<h4 data-calendar-header>Loading...</h4>
+			<div class="calendar-container" data-calendar>
+	
+			</div>
+			<h3 data-day-header>Select a day in the calendar to add an Appointment</h3>
+			<div class="form">
+				<label for="appointment">Appointment description:</label>
+				<br/>
+				<textarea name="appointment" data-appointment-input></textarea>
+				<br/>
+				<button data-delete>Delete</button>
+				<button data-save>Save</button>
+			</div>
+		</div>
+		<script src="js/calendar.js"></script>
+	</body>
+</html>

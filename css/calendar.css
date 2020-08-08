@@ -1,0 +1,40 @@
+.app {
+  margin: auto;
+  display: table;
+  width: 400px;
+}
+
+.calendar-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  max-width: 272px;
+  grid-gap: 5px;
+}
+
+.calendar-day {
+  border: 1px solid black;
+  text-align: right;
+  padding: 3px;
+  cursor: pointer; /* An standard edit pen cursor would be better */
+}
+
+.selected { 
+  background: #1a73e8;
+  color: white;
+}
+
+
+.has-appointment::before {
+  content: "• ";
+}
+
+textarea[data-appointment-input]{
+  margin-top: 10px;
+}
+
+/* This was copied from w3schools.com just to give a better look */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 10px;
+}
